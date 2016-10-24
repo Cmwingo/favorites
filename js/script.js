@@ -11,5 +11,8 @@ $(document).ready(function(){
     rearrangedInputs.push(favoriteInputs.slice(2, 3));
     rearrangedInputs.push(favoriteInputs.slice(1, 2));
     alert(rearrangedInputs);
+    favoriteInputs.forEach(function(thing) {
+      $("#favoriteResult").append("<li>" + thing + "</li>");
+    });
   });
 });
